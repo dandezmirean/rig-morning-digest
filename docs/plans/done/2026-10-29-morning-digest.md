@@ -1,8 +1,9 @@
 ---
 plan: morning-digest
-status: ready
+status: done
 owner: rook
 opened: 2026-10-29
+closed: 2026-10-31
 ---
 
 # Morning digest
@@ -77,3 +78,18 @@ page again with `LANE_MARKER` unset (the banner reads "no marker set") and uploa
 link. Move this plan to `docs/plans/done/` with its issue list.
 
 Done when: the preview link no longer shows the lane marker.
+
+## Issues
+
+| # | Issue | Blocked by | Worker | Closed |
+|---|-------|-----------|--------|--------|
+| 1 | Digest types | — | claude-code · opus-5.5 · medium | 2026-10-31 |
+| 2 | Run log reader | #1 | claude-code · opus-5.5 · high | 2026-10-31 |
+| 3 | Digest page | #1 | claude-code · sonnet-5.5 · low | 2026-10-31 |
+| 4 | Digest JSON | #1 | claude-code · haiku-5.5 · low | 2026-10-31 |
+| 5 | Board links to each night's digest | #1 | claude-code · sonnet-5.5 · low | 2026-10-31 |
+| 6 | Route tests for the digest | #3, #4 | claude-code · haiku-5.5 · low | 2026-10-31 |
+| 7 | Preview for review | #3, #4, #5, #6 | claude-code · opus-5.5 · medium | 2026-10-31 |
+| 8 | Clean up | #7 | claude-code · opus-5.5 · medium | 2026-10-31 |
+
+The preview at rig-morning-digest-dd.surge.sh now shows "no marker set". See ADR 0003.
